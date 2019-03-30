@@ -1,6 +1,6 @@
-# vue-cli2
+# vivo钱包脚手架
 
-> A Vue.js project
+> vue-rem-vux
 
 ## Build Setup
 

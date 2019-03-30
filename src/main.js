@@ -5,11 +5,13 @@ import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 import App from './App'
 import routes from './router'
+import  { ToastPlugin } from 'vux'
 
 Vue.use(VueRouter)
+Vue.use(ToastPlugin)
 
 const router = new VueRouter({
-  routes
+	routes
 })
 
 FastClick.attach(document.body)
@@ -18,6 +20,6 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  router,
-  render: h => h(App)
+	router,
+	render: h => h(App)
 }).$mount('#app-box')
