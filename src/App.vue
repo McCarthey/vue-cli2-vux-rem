@@ -9,13 +9,11 @@
 <script>
 import { calRem } from "./rem";
 
-const fontSize = 32;
-
 export default {
 	name: "app",
 	beforeCreate() {
-		calRem(fontSize);
-		window.onresize = () => calRem(fontSize);
+		calRem();
+		window.onresize = () => calRem();
 	}
 };
 </script>
