@@ -11,6 +11,7 @@
 		"build": "node build/build.js"
 	},
 	"dependencies": {
+		"a-pei": "^0.1.0",
 		"fastclick": "^1.0.6",
 		"postcss-pxtorem": "^4.0.1",
 		"vue": "^2.5.2",

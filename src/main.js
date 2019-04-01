@@ -6,9 +6,12 @@ import VueRouter from 'vue-router'
 import App from './App'
 import routes from './router'
 import  { ToastPlugin } from 'vux'
+import APei from 'a-pei'
+import '../node_modules/a-pei/dist/a-pei.css'
 
 Vue.use(VueRouter)
 Vue.use(ToastPlugin)
+Vue.use(APei)
 
 const router = new VueRouter({
 	routes
