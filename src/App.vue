@@ -1,20 +1,20 @@
 <template>
-	<div id="app">
-		<router-link :to="{name: 'HelloWorld'}">HelloWorld</router-link>
-		<router-link :to="{name: 'HelloFromVux'}">Vux</router-link>
-		<router-view></router-view>
-	</div>
+    <div id="app">
+        <router-link :to="{ name: 'HelloWorld' }">HelloWorld</router-link>
+        <router-link :to="{ name: 'HelloFromVux' }">Vux</router-link>
+        <router-view></router-view>
+    </div>
 </template>
 
 <script>
 import { calRem } from "./rem";
 
 export default {
-	name: "app",
-	beforeCreate() {
-		calRem();
-		window.onresize = () => calRem();
-	}
+    name: "app",
+    beforeCreate() {
+        calRem();
+        window.onresize = () => calRem();
+    }
 };
 </script>
 
@@ -22,6 +22,6 @@ export default {
 @import "~vux/src/styles/reset.less";
 
 body {
-  	background-color: #fbf9fe;
+    background-color: #fbf9fe;
 }
 </style>
