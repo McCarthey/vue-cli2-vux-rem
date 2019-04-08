@@ -2,6 +2,7 @@
     <div id="app">
         <router-link :to="{ name: 'HelloWorld' }">HelloWorld</router-link>
         <router-link :to="{ name: 'HelloFromVux' }">Vux</router-link>
+        <router-link :to="{ name: 'HelloRx' }">Rx</router-link> 
         <router-view></router-view>
     </div>
 </template>

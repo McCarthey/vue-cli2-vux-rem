@@ -1,17 +1,18 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
+import VueRx from 'vue-rx'
 import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 import App from './App'
 import routes from './router'
-import  { ToastPlugin } from 'vux'
 import APei from 'a-pei'
-import 'a-pei/dist/a-pei.css'
+import 'a-pei/lib/a-pei.css'
 
+Vue.use(VueRx)
 Vue.use(APei)
 Vue.use(VueRouter)
-Vue.use(ToastPlugin)
+// Vue.use(ToastPlugin)
 
 const router = new VueRouter({
 	routes
