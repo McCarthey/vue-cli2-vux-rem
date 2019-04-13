@@ -6,11 +6,12 @@ import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 import App from './App'
 import routes from './router'
-// import Apei from 'a-pei'
-import {Button} from 'a-pei'
+import Apei from 'a-pei'
+import 'a-pei/lib/theme/index.css'
+// import {Button} from 'a-pei'
 
-// Vue.use(Apei)
-Vue.use(Button)
+Vue.use(Apei)
+// Vue.use(Button)
 Vue.use(VueRx)
 Vue.use(VueRouter)
 // Vue.use(ToastPlugin)
