@@ -6,7 +6,8 @@ module.exports = {
 		"postcss-import": {},
 		"autoprefixer": {},
 		"postcss-pxtorem": {
-			"rootValue": 32
+			"rootValue": 32,
+			"propList": ['*']
 		}
 	}
 }
