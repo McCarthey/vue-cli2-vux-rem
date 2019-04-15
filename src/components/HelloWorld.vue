@@ -2,8 +2,9 @@
     <div class="hello">
         <h1>{{ msg }}</h1>
         <h2>Essential Links</h2>
-        <vp-button type="primary">A-pei demo</vp-button>
-        <vp-switch v-model="isEmpty">开关</vp-switch>
+        <v-button type="primary">A-pei demo</v-button>
+        <v-switch title="开关" v-model="isEmpty"></v-switch>
+        <inline-v-switch></inline-v-switch>
         <ul>
             <li>
                 <a href="https://vuejs.org" target="_blank">Core Docs</a>

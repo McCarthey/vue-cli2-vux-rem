@@ -11,7 +11,7 @@
 		"build": "node build/build.js"
 	},
 	"dependencies": {
-		"a-pei": "^0.0.24",
+		"a-pei": "^0.0.31",
 		"fastclick": "^1.0.6",
 		"postcss-pxtorem": "^4.0.1",
 		"postcss-url": "^8.0.0",
