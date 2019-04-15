@@ -66,16 +66,10 @@
   version "11.12.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.12.1.tgz#d90123f6c61fdf2f7cddd286ddae891586dd3488"
 
-<<<<<<< HEAD
 a-pei@^0.0.31:
   version "0.0.31"
   resolved "https://registry.yarnpkg.com/a-pei/-/a-pei-0.0.31.tgz#be7c78e64ddec393a65b5f2b210ad9e345b912b6"
   integrity sha512-bS4sgdhaAS9pO/UvyA7TzIIdxMuxzSPQLmhtn6vIS/YxM9m8lQPmCmoywNDiCXzQBuGGRF7NdvQQPkM4ZaEwLA==
-=======
-a-pei@^0.0.30:
-  version "0.0.30"
-  resolved "https://registry.npmjs.org/a-pei/-/a-pei-0.0.30.tgz#1d37707fdf500455a4de6a979678180089fbcc7b"
->>>>>>> c65ee447bb669cb17435d8b5f963715ea4154de5
   dependencies:
     babel-plugin-dynamic-import-webpack "^1.1.0"
     countup.js "^2.0.4"
@@ -591,12 +585,8 @@ babel-plugin-component@^1.1.1:
 
 babel-plugin-dynamic-import-webpack@^1.1.0:
   version "1.1.0"
-<<<<<<< HEAD
   resolved "https://registry.yarnpkg.com/babel-plugin-dynamic-import-webpack/-/babel-plugin-dynamic-import-webpack-1.1.0.tgz#955306608cdae6191cd1d3f50cf93826ff69f4e1"
   integrity sha512-Q/Vxl3zRwC5/DMyg97Ey2UD/f7ApvO+0zXgzwT3G2N7oajGFroqcUEmXZ23QXJsr0Y+DBVNK57saaUnQhCpllA==
-=======
-  resolved "https://registry.npmjs.org/babel-plugin-dynamic-import-webpack/-/babel-plugin-dynamic-import-webpack-1.1.0.tgz#955306608cdae6191cd1d3f50cf93826ff69f4e1"
->>>>>>> c65ee447bb669cb17435d8b5f963715ea4154de5
 
 babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
@@ -5375,12 +5365,8 @@ schema-utils@^0.4.0, schema-utils@^0.4.5:
 
 schema-utils@^1.0.0:
   version "1.0.0"
-<<<<<<< HEAD
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-1.0.0.tgz#0b79a93204d7b600d4b2850d1f66c2a34951c770"
   integrity sha512-i27Mic4KovM/lnGsy8whRCHhc7VicJajAjTrYg11K9zfZXnYIt4k5F+kZkwjnrhKzLic/HLU4j11mjsz2G/75g==
-=======
-  resolved "https://registry.npmjs.org/schema-utils/-/schema-utils-1.0.0.tgz#0b79a93204d7b600d4b2850d1f66c2a34951c770"
->>>>>>> c65ee447bb669cb17435d8b5f963715ea4154de5
   dependencies:
     ajv "^6.1.0"
     ajv-errors "^1.0.0"
