@@ -13,13 +13,14 @@
 	],
 	"plugins": [
 		[
-			"component",
+			"component-fix",
 			{
 				"libraryName": "a-pei",
 				"styleLibrary": {
 					"name": "theme",
-					"base": false
-				}
+					"base": false,
+				},
+				"exclusions": ["throttle"]
 			}
 		]
 	]

@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import {throttle} from 'a-pei'
 import { empty, merge } from "rxjs";
 import { mapTo, tap, startWith, scan } from "rxjs/operators";
 export default {
@@ -22,6 +23,12 @@ export default {
                 tap(e => console.log(e))
             )
         };
+    },
+    created() {
+        console.log(throttle)
+        window.onmousemove = throttle(() => {
+            console.log("eee" + +new Date());
+        }, 1000);
     }
 };
 </script>
