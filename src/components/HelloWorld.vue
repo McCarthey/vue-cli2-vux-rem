@@ -1,67 +1,33 @@
 <template>
-    <div class="hello">
-        <h1>{{ msg }}</h1>
-        <h2>Essential Links</h2>
-        <v-button type="primary">A-pei demo</v-button>
-        <v-switch title="开关" v-model="isEmpty"></v-switch>
-        <inline-v-switch></inline-v-switch>
-        <ul>
-            <li>
-                <a href="https://vuejs.org" target="_blank">Core Docs</a>
-            </li>
-            <li>
-                <a href="https://forum.vuejs.org" target="_blank">Forum</a>
-            </li>
-            <li>
-                <a href="https://chat.vuejs.org" target="_blank"
-                    >Community Chat</a
-                >
-            </li>
-            <li>
-                <a href="https://twitter.com/vuejs" target="_blank">Twitter</a>
-            </li>
-            <br />
-            <li>
-                <a
-                    href="http://vuejs-templates.github.io/webpack/"
-                    target="_blank"
-                    >Docs for This Template</a
-                >
-            </li>
-        </ul>
-        <h2>Ecosystem</h2>
-        <ul>
-            <li>
-                <a href="http://router.vuejs.org/" target="_blank"
-                    >vue-router</a
-                >
-            </li>
-            <li>
-                <a href="http://vuex.vuejs.org/" target="_blank">vuex</a>
-            </li>
-            <li>
-                <a href="http://vue-loader.vuejs.org/" target="_blank"
-                    >vue-loader</a
-                >
-            </li>
-            <li>
-                <a href="https://github.com/vuejs/awesome-vue" target="_blank"
-                    >awesome-vue</a
-                >
-            </li>
-        </ul>
-    </div>
+  <div>hello</div>
 </template>
 
 <script>
+import mixin from "./mixin";
 export default {
-    name: "HelloWorld",
-    data() {
-        return {
-            msg: "Welcome to Your Vue.js App",
-            isEmpty: false
-        };
+  name: "HelloWorld",
+  mixins: [mixin],
+  data() {
+    return {
+      msg: "Welcome to Your Vue.js App",
+      isEmpty: false,
+      fetchData: false
+    };
+  },
+  created() {
+    this.sleep(3000).then(() => {
+      this.fetchData = true;
+    });
+  },
+  methods: {
+    sleep(time) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve();
+        }, time);
+      });
     }
+  }
 };
 </script>
 
@@ -69,17 +35,68 @@ export default {
 <style scoped>
 h1,
 h2 {
-    font-weight: normal;
+  font-weight: normal;
 }
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 li {
-    display: inline-block;
-    margin: 0 10px;
+  display: inline-block;
+  margin: 0 10px;
 }
 a {
-    color: #42b983;
+  color: #42b983;
+}
+.skeleton {
+  padding: 10px;
+}
+
+.skeleton .skeleton-head,
+.skeleton .skeleton-title,
+.skeleton .skeleton-content {
+  background: rgb(194, 207, 214);
+}
+
+.skeleton-head {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.skeleton-body {
+  margin-left: 110px;
+}
+
+.skeleton-title {
+  width: 500px;
+  height: 60px;
+}
+
+.skeleton-content {
+  width: 260px;
+  height: 30px;
+  margin-top: 10px;
+}
+.skeleton .skeleton-head,
+.skeleton .skeleton-title,
+.skeleton .skeleton-content {
+  background: rgb(194, 207, 214);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%
+  );
+  background-size: 20rem 20rem;
+  animation: skeleton-stripes 1s linear infinite;
+}
+
+@keyframes skeleton-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 20rem 0;
+  }
 }
 </style>
